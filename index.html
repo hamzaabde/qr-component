@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>QR Code component | Frontend Mentor challenge solution</title>
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Outfit", "Segoe UI", sans-serif;
+      }
+
+      *:root {
+        --White: hsl(0, 0%, 100%);
+        --Light-gray: hsl(212, 45%, 89%);
+        --Grayish-blue: hsl(220, 15%, 55%);
+        --Dark-blue: hsl(218, 44%, 22%);
+
+        --p-size: 15px;
+
+        --radius: 0.5rem;
+        --component-padding: 1rem;
+        --copy-margin: 1rem;
+      }
+
+      img {
+        max-width: 100%;
+        border-radius: var(--radius);
+      }
+
+      h1,
+      p {
+        text-align: center;
+        margin: auto var(--copy-margin);
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin: var(--copy-margin) auto;
+        color: var(--Dark-blue);
+      }
+
+      p {
+        font-size: 1rem;
+        color: var(--Grayish-blue);
+        margin-bottom: var(--copy-margin);
+      }
+
+      a {
+        color: hsl(322, 86%, 40%);
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--Light-gray);
+      }
+
+      .component {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 320px;
+        background-color: var(--White);
+        padding: var(--component-padding);
+        font-family: "Outfit", "Segoe UI", sans-serif;
+        border-radius: var(--radius);
+        box-shadow: 0 0.2rem 3rem 0.1rem rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="component">
+        <div class="img-frame">
+          <img src="./images/qr-code.png" alt="" />
+        </div>
+        <div class="content">
+          <h1>Improve your front-end skills by building projects</h1>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+      <div class="attribution">
+        <p>
+          Challenge by:
+          <a href="frontendmentor.io/?ref=challenge">Frontend Mentor</a>.
+        </p>
+        <p>
+          Coded by:
+          <a href="github.com/hamzaabde" target="_blank">Hamsa Abdi</a>.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
